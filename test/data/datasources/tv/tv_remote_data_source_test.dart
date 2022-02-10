@@ -55,36 +55,6 @@ void main() {
         });
   });
 
-  group('get Popular Tvs', () {
-    final tTvList =
-        TvResponse.fromJson(json.decode(readJson('dummy_data/popular.json')))
-            .tvList;
-
-    test('should return list of Tvs when response is success (200)',
-            () async {
-          // arrange
-          when(mockHttpClient.get(Uri.parse('$BASE_URL/tv/popular?$API_KEY')))
-              .thenAnswer((_) async =>
-              http.Response(readJson('dummy_data/popular.json'), 200));
-          // act
-          final result = await dataSource.getPopularTvs();
-          // assert
-          expect(result, tTvList);
-        });
-
-    test(
-        'should throw a ServerException when the response code is 404 or other',
-            () async {
-          // arrange
-          when(mockHttpClient.get(Uri.parse('$BASE_URL/tv/popular?$API_KEY')))
-              .thenAnswer((_) async => http.Response('Not Found', 404));
-          // act
-          final call = dataSource.getPopularTvs();
-          // assert
-          expect(() => call, throwsA(isA<ServerException>()));
-        });
-  });
-
   group('get Top Rated Tvs', () {
     final tTvList = TvResponse.fromJson(
         json.decode(readJson('dummy_data/top_rated.json')))
