@@ -1,0 +1,22 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "first_air_date": "2019-06-16",
+      "backdrop_path": "/oKt4J3TFjWirVwBqoHyIvv5IImd.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 85552,
+      "name": "Euphoria",
+      "original_language": "en",
+      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "popularity": 3549.827,
+      "poster_path": "/jtnfNzqZwN4E32FGGxx1YZaBWWf.jpg",
+      "vote_average": 8.4,
+      "vote_count": 6102
+    }
+  ],
+  "total_pages": 50,
+  "total_results": 981
+}

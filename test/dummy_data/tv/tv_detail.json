@@ -1,0 +1,20 @@
+{
+  "backdrop_path": "/oKt4J3TFjWirVwBqoHyIvv5IImd.jpg",
+  "episode_run_time": [
+    60
+  ],
+  "first_air_date": "2019-06-16",
+  "genres": [
+    {
+      "id": 18,
+      "name": "Drama"
+    }
+  ],
+  "id": 85552,
+  "name": "Euphoria",
+  "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+  "popularity": 3549.827,
+  "poster_path": "/jtnfNzqZwN4E32FGGxx1YZaBWWf.jpg",
+  "vote_average": 8.4,
+  "vote_count": 6121
+}

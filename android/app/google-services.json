@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "285651542746",
+    "project_id": "ditonton-fedee",
+    "storage_bucket": "ditonton-fedee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285651542746:android:1736fa6679545cf080bbe3",
+        "android_client_info": {
+          "package_name": "com.dicoding.ditonton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285651542746-t8icckiojl7lj6dnpvv2daandua9sbkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQm2pZ06o4EbZCGdrmjlAy0GZKehNjdO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285651542746-t8icckiojl7lj6dnpvv2daandua9sbkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
