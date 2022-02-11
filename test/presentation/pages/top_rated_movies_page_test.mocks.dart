@@ -4,7 +4,8 @@
 
 import 'dart:async' as _i3;
 
-import 'package:ditonton/presentation/bloc/movie/toprated/top_rated_movies_cubit.dart' as _i2;
+import 'package:ditonton/presentation/bloc/movie/toprated/top_rated_movies_cubit.dart'
+    as _i2;
 import 'package:flutter_bloc/flutter_bloc.dart' as _i4;
 import 'package:mockito/mockito.dart' as _i1;
 

@@ -1,3 +1,4 @@
+import 'package:ditonton/common/http_ssl_pinning.dart';
 import 'package:ditonton/data/datasources/db/database_helper.dart';
 import 'package:ditonton/data/datasources/movie_local_data_source.dart';
 import 'package:ditonton/data/datasources/movie_remote_data_source.dart';
@@ -20,9 +21,9 @@ import 'package:ditonton/domain/usecases/search_movies.dart';
 import 'package:ditonton/domain/usecases/tv/tv_usecase.dart';
 import 'package:ditonton/presentation/bloc/movie/detail/movie_detail_cubit.dart';
 import 'package:ditonton/presentation/bloc/movie/onplaying/movie_list_cubit.dart';
+import 'package:ditonton/presentation/bloc/movie/popular/popular_movies_cubit.dart';
 import 'package:ditonton/presentation/bloc/movie/recommendations/recommendation_movies_cubit.dart';
 import 'package:ditonton/presentation/bloc/movie/search/movie_search_cubit.dart';
-import 'package:ditonton/presentation/bloc/movie/popular/popular_movies_cubit.dart';
 import 'package:ditonton/presentation/bloc/movie/toprated/top_rated_movies_cubit.dart';
 import 'package:ditonton/presentation/bloc/movie/watchlist/watchlist_movie_bloc.dart';
 import 'package:ditonton/presentation/bloc/tv/detail/tv_detail_cubit.dart';
@@ -32,11 +33,7 @@ import 'package:ditonton/presentation/bloc/tv/recommendations/recommendation_tv_
 import 'package:ditonton/presentation/bloc/tv/search/tv_search_cubit.dart';
 import 'package:ditonton/presentation/bloc/tv/toprated/top_rated_tv_cubit.dart';
 import 'package:ditonton/presentation/bloc/tv/watchlist/watchlist_tv_bloc.dart';
-import 'package:ditonton/presentation/provider/movie_detail_notifier.dart';
-import 'package:ditonton/presentation/provider/tv/tv_notifier.dart';
-import 'package:ditonton/presentation/provider/watchlist_movie_notifier.dart';
 import 'package:get_it/get_it.dart';
-import 'package:http/http.dart' as http;
 
 final locator = GetIt.instance;
 
@@ -106,5 +103,5 @@ void init() {
   locator.registerLazySingleton<DatabaseHelper>(() => DatabaseHelper());
 
   // external
-  locator.registerLazySingleton(() => http.Client());
+  locator.registerLazySingleton(() => HttpSSLPinning.client);
 }
